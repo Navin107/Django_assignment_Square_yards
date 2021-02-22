@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The geocoding web application </title>
+    <link rel="stylesheet" href="navinraj.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        /* Modify the background color */
+
+        .navbar-custom {
+            background-color: indigo;
+        }
+        /* Modify brand and text color */
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color:white;
+            text-align: center;
+        }
+    
+
+        body{
+          background: url("https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2021&q=80")
+        }
+        h2{
+          color:blue;
+        }
+        .btn-custom{
+          background-color:indigo;
+          color:white;
+        }
+        .jumbotron{
+          background: rgba(0,0,0,0)
+        }
+  
+form{
+  text-align:center;
+  color:white;
+}
+.btn-custom{
+  background-color:indigo;
+}
+.submit{
+  color:white;
+}
+
+#submitt{
+    font-size: 30px;
+}
+
+
+    </style>
+   
+    </head>
+  <body>
+    <nav class="navbar navbar -expand-lg navbar-custom">
+           <p class="navbar-brand" >Geocoding</p>
+       </nav>
+       <p></p>
+
+       <form method="post" enctype="multipart/form-data", action='geocoding_excel'>
+
+        {% csrf_token %}
+         <h1>Please upload a excel file!!</h1>
+        
+
+
+        </div>
+        <p></p>
+        <p></p>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Please upload a file with column "Address"</label><br>
+        </div>
+        <div class="form-group">
+
+          <input type="file"  accept=".xlsx"  name="docs">
+
+     
+
+        </div>
+
+        
+         <button type="submit" class="btn btn-custom" id="submitt" >Submit </button>
+       </form>
+
+
+  </body>
+</html>

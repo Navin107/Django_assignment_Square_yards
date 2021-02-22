@@ -2,29 +2,18 @@
 This is the github repository of django assignment given by Square yards. 
 Here is the package and the versions
 
-django                    2.2.5                    
-et-xmlfile                1.0.1                    
-geographiclib             1.50                     
-geopy                     2.1.0                    
-jdcal                     1.4.1                    
-natsort                   7.1.1                    
-numpy                     1.20.1                   
-openpyxl                  3.0.6                    
-openssl                   1.1.1j               
-pandas                    1.2.2                    
-pip                       21.0.1           
-python                    3.7.9               
-python-dateutil           2.8.1                    
-pytz                      2021.1             
-setuptools                52.0.0           
-six                       1.15.0                   
-sqlite                    3.33.0               
-sqlparse                  0.4.1                    
-vc                        14.2                 
-vs2015_runtime            14.27.29016          
-wheel                     0.36.2             
-wincertstore              0.2                      
-xlrd                      2.0.1                    
-xlsxwriter                1.3.7                    
-zlib                      1.2.11               
-  
+
+setup:
+Download and install Anaconda
+Download and install visual studio code
+Set up the python environment in visual studio code
+In the terminal of Visual studio code, set the path of python environment to anaconda's base environment4
+To use virtual environment with condas we use these commands:
+"conda create --name mydjangoenv django=2.2.5"
+Then activate the environment by using the following command
+"activate mydjangoenv"
+
+Now the setup is done
+libraries to be installed is pandas, xlsxwriter, openpyxl , geopy
+
+

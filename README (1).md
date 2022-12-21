@@ -5,7 +5,7 @@ Execute the executable file: json_schema_generator.exe, which will open a UI for
 
 ## Installation
 
-Install my-project 
+Install  
 
 ```bash
 $ git clone https://github.com/Navin107/json_schema_generator_ui.git
